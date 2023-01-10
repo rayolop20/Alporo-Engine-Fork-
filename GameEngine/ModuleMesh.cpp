@@ -174,6 +174,7 @@ void ModuleMesh::RenderScene()
 		App->renderer3D->DrawBox(corners, float3(1, 0, 0));
 	}
 	//AQUI**
+
 }
 
 void ModuleMesh::RenderGameWindow()
@@ -197,11 +198,12 @@ void ModuleMesh::RenderUIWindow()
 {
 	//Render Game Window
 
-		for (int i = 0; i < UImeshes.size(); i++) {
-			if (!App->renderer3D->GetMainCamera()->IsInsideFrustum(UImeshes[i])) continue;
+		for (int i = 0; i < meshes.size(); i++) {
+			if (!App->renderer3D->GetMainCamera()->IsInsideFrustum(meshes[i])) continue;
+
 			if (meshes[i]->myGameObject->type == GameObjectType::UI)
 			{
-				UImeshes[i]->Render();
+				meshes[i]->Render();
 			}
 		}
 	

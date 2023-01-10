@@ -59,7 +59,6 @@ public:
 	int renderedGameMeshes;
 
 	vector<Mesh*> meshes;
-	vector<Mesh*> UImeshes;
 
 	float3 debugRaycastA;
 	float3 debugRaycastB;

@@ -182,12 +182,17 @@ update_status ModuleRenderer3D::PostUpdate(float dt)
 
 		//Bind buffer
 		BindCameraBuffer(mainGameCamera);
-		
-
 		//Render Game Camera
 		App->meshRenderer->RenderGameWindow();
-		//Render UI Camera
+
+		//unbind
+		glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+		//Bind UI Camera Buffer
+		mainUICamera;
 		BindUICameraBuffer(mainUICamera);
+		//Render UI Camera
+		App->meshRenderer->RenderUIWindow();
 	}
 
 	//FrameBuffer clean binding
