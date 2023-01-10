@@ -47,6 +47,7 @@ public:
 
 	void RenderScene();
 	void RenderGameWindow();
+	void RenderUIWindow();
 
 	bool Init();
 	bool CleanUp();
@@ -58,6 +59,7 @@ public:
 	int renderedGameMeshes;
 
 	vector<Mesh*> meshes;
+	vector<Mesh*> UImeshes;
 
 	float3 debugRaycastA;
 	float3 debugRaycastB;

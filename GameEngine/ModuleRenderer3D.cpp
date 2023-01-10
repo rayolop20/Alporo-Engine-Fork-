@@ -4,6 +4,7 @@
 
 #include "ModuleDummy.h"
 #include "ComponentCamera.h"
+#include "ComponentUICamera.h"
 #include "HeaderMenu.h"
 
 #include "SDL_opengl.h"
@@ -181,9 +182,12 @@ update_status ModuleRenderer3D::PostUpdate(float dt)
 
 		//Bind buffer
 		BindCameraBuffer(mainGameCamera);
+		
 
 		//Render Game Camera
 		App->meshRenderer->RenderGameWindow();
+		//Render UI Camera
+		BindUICameraBuffer(mainUICamera);
 	}
 
 	//FrameBuffer clean binding
@@ -224,6 +228,20 @@ void ModuleRenderer3D::BindCameraBuffer(CameraComponent* cc)
 	glLoadMatrixf(cc->GetViewMatrix());
 
 	glBindFramebuffer(GL_FRAMEBUFFER, cc->frameBuffer);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+}
+
+void ModuleRenderer3D::BindUICameraBuffer(UICameraComponent* cc)
+{
+	//Bind game camera framebuffer
+	glMatrixMode(GL_PROJECTION);
+	glLoadMatrixf(cc->GetProjetionMatrix());
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadMatrixf(cc->GetViewMatrix());
+
+	glBindFramebuffer(GL_FRAMEBUFFER, mainGameCamera->cameraBuffer);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 }

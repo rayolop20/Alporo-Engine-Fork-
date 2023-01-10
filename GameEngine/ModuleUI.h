@@ -2,6 +2,8 @@
 #include "Module.h"
 #include "Globals.h"
 
+class UICameraComponent;
+
 class ModuleUI : public Module
 {
 public:
@@ -15,5 +17,5 @@ public:
 	update_status PostUpdate(float dt);
 	bool CleanUp();
 
-
+	UICameraComponent* UICamera;
 };

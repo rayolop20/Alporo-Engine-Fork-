@@ -10,6 +10,7 @@
 #define MAX_LIGHTS 8
 
 class CameraComponent;
+class UICameraComponent;
 
 class ModuleRenderer3D : public Module
 {
@@ -28,9 +29,10 @@ public:
 
 	void SetMainCamera(CameraComponent* cam);
 	CameraComponent* GetMainCamera();
-
-private:
 	void BindCameraBuffer(CameraComponent* cc);
+	void BindUICameraBuffer(UICameraComponent* cc);
+private:
+
 
 public:
 
@@ -38,7 +40,8 @@ public:
 	SDL_GLContext context;
 	float3x3 NormalMatrix;
 	float4x4 ModelMatrix, ViewMatrix, ProjectionMatrix;
-
-private:
 	CameraComponent* mainGameCamera;
+	UICameraComponent* mainUICamera;
+private:
+
 };

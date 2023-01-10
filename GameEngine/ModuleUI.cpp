@@ -1,6 +1,8 @@
 #include "Application.h"
 #include "ModuleUI.h"
 #include "GameWindow.h"
+#include "ModuleRenderer3D.h"
+#include "ComponentUICamera.h"
 
 ModuleUI::ModuleUI(Application* app, bool start_enabled) : Module(app, start_enabled)
 {
@@ -12,6 +14,9 @@ ModuleUI::~ModuleUI()
 
 bool ModuleUI::Start()
 {
+	UICamera = new UICameraComponent();
+	UICamera->frustum.pos = float3(0, 0, 0);
+
 	return false;
 }
 
@@ -48,6 +53,7 @@ update_status ModuleUI::Update(float dt)
 
 update_status ModuleUI::PostUpdate(float dt)
 {
+
 	update_status ret = UPDATE_CONTINUE;
 	return ret;
 }
