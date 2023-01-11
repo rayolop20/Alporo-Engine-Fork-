@@ -28,9 +28,9 @@ public:
 
 	void SetMainCamera(CameraComponent* cam);
 	CameraComponent* GetMainCamera();
+	void BindCameraBuffer(CameraComponent* cc);
 
 private:
-	void BindCameraBuffer(CameraComponent* cc);
 
 public:
 
@@ -38,7 +38,7 @@ public:
 	SDL_GLContext context;
 	float3x3 NormalMatrix;
 	float4x4 ModelMatrix, ViewMatrix, ProjectionMatrix;
-
-private:
 	CameraComponent* mainGameCamera;
+private:
+
 };
