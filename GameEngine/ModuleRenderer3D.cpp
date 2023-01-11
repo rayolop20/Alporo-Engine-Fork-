@@ -185,14 +185,16 @@ update_status ModuleRenderer3D::PostUpdate(float dt)
 		//Render Game Camera
 		App->meshRenderer->RenderGameWindow();
 
+
+		glDisable(GL_DEPTH);
 		//unbind
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 		//Bind UI Camera Buffer
-		mainUICamera;
-		BindUICameraBuffer(mainUICamera);
+		BindUICameraBuffer(App->ui->UICamera);
 		//Render UI Camera
 		App->meshRenderer->RenderUIWindow();
+		glEnable(GL_DEPTH);
 	}
 
 	//FrameBuffer clean binding

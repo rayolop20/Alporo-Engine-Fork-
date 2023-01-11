@@ -3,6 +3,7 @@
 #include "MathGeoLib.h"
 
 struct Mesh;
+struct CameraComponent;
 
 class UICameraComponent : public Component
 {
@@ -28,8 +29,9 @@ public:
 
 	bool isMainCamera = false;
 
-	unsigned int UIcameraBuffer;
-	unsigned int UIframeBuffer;
+	//unsigned int UIcameraBuffer;
+	//unsigned int UIframeBuffer;
+	CameraComponent* UICam;
 	float2 size;
 private:
 	float4x4 viewMatrix;

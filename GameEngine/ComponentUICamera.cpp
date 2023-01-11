@@ -1,4 +1,5 @@
 #include "ComponentUICamera.h"
+#include "ComponentCamera.h"
 #include "GameObject.h"
 #include "Transform.h"
 #include "imgui.h"
@@ -17,6 +18,8 @@ UICameraComponent::UICameraComponent()
 	frustum.farPlaneDistance = farDistance; //inspector
 	frustum.front = float3::unitZ;
 	frustum.up = float3::unitY;
+	frustum.orthographicHeight = 431;
+	//frustum.orthographicWidth = 822;
 	frustum.horizontalFov = 2.0f * atanf(tanf(frustum.verticalFov / 2.0f) * 1.7f); // 16:9 ~= 1,77777...
 	frustum.pos = float3(0, 0, 0);
 
@@ -26,9 +29,10 @@ UICameraComponent::~UICameraComponent()
 {
 	if (isMainCamera) Application::GetInstance()->renderer3D->SetMainCamera(nullptr);
 
-	glDeleteFramebuffers(1, &UIcameraBuffer);
-	glDeleteFramebuffers(1, &UIframeBuffer);
-	glDeleteFramebuffers(1, &UIrenderObjBuffer);
+	//glDeleteFramebuffers(1, &UICam->cameraBuffer);
+	//glDeleteFramebuffers(1, &UICam->frameBuffer);
+	//glDeleteFramebuffers(1, &UICam->renderObjBuffer);
+	
 
 }
 

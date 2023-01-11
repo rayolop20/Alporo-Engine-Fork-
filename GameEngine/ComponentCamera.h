@@ -38,10 +38,11 @@ public:
 
 	unsigned int cameraBuffer;
 	unsigned int frameBuffer;
+	unsigned int renderObjBuffer;
 	float2 size;
 private:
 	float4x4 viewMatrix;
 	float4x4 projectionMatrix;
 
-	unsigned int renderObjBuffer;
+
 };

@@ -41,7 +41,6 @@ public:
 	float3x3 NormalMatrix;
 	float4x4 ModelMatrix, ViewMatrix, ProjectionMatrix;
 	CameraComponent* mainGameCamera;
-	UICameraComponent* mainUICamera;
 private:
 
 };
