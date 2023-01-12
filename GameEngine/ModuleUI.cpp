@@ -2,6 +2,8 @@
 #include "ModuleUI.h"
 #include "GameWindow.h"
 #include "ModuleRenderer3D.h"
+#include "ModuleMesh.h"
+#include "ComponentCamera.h"
 
 ModuleUI::ModuleUI(Application* app, bool start_enabled) : Module(app, start_enabled)
 {
@@ -49,30 +51,37 @@ update_status ModuleUI::Update(float dt)
 
 update_status ModuleUI::PostUpdate(float dt)
 {
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glDisable(GL_DEPTH_TEST);
 
-	glPushMatrix();
-
-	App->renderer3D->BindCameraBuffer(App->renderer3D->mainGameCamera);
-
-	Frustum frustum;
-	frustum.pos = float3::zero;
-	frustum.front = float3::unitZ; //COGED EL FRONT DE LA CAMARA DE JUEGO
-	frustum.up = float3::unitY; //COGED EL UP DE LA CAMARA DE JUEGO
-	frustum.type = OrthographicFrustum;
-	//frustum.orthographicHeight = App->renderer3D->mainGameCamera->size.y; //PONER EL TAMAÑO DEL VIEWPORT DONDE QUERAIS PINTAR
-	//frustum.orthographicWidth = App->renderer3D->mainGameCamera->size.x; //PONER EL TAMAÑO DEL VIEWPORT DONDE QUERAIS PINTAR
-	frustum.nearPlaneDistance = 0.1;
-	frustum.farPlaneDistance = 1000.f;
-
-	glMatrixMode(GL_PROJECTION);
-	glLoadMatrixf(frustum.ProjectionMatrix().Transposed().ptr());
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-
-
+	//	glEnable(GL_BLEND);
+	//	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	//	glDisable(GL_DEPTH_TEST);
+	//
+	//	glPushMatrix();
+	//
+	//	App->renderer3D->BindCameraBuffer(App->renderer3D->mainGameCamera);
+	//
+	//	
+	//	App->renderer3D->mainGameCamera->frustum.pos = float3::zero;
+	//	App->renderer3D->mainGameCamera->frustum.front = float3::unitZ; 
+	//	App->renderer3D->mainGameCamera->frustum.up = float3::unitY;
+	//	App->renderer3D->mainGameCamera->frustum.type = OrthographicFrustum;
+	//	//App->renderer3D->mainGameCamera->frustum.orthographicHeight = widthGWindow; 
+	//	//App->renderer3D->mainGameCamera->frustum.orthographicWidth = heightGWindow; 
+	//	App->renderer3D->mainGameCamera->frustum.nearPlaneDistance = 0.1;
+	//	App->renderer3D->mainGameCamera->frustum.farPlaneDistance = 1000.f;
+	//
+	//	glMatrixMode(GL_PROJECTION);
+	//	glLoadMatrixf(App->renderer3D->mainGameCamera->frustum.ProjectionMatrix().Transposed().ptr());
+	//	glMatrixMode(GL_MODELVIEW);
+	//	glLoadIdentity();
+	//
+	//	App->meshRenderer->RenderGameWindow();
+	//
+	//	glEnable(GL_DEPTH_TEST);
+	//	glPopMatrix();
+	//
+	//
+	//glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	update_status ret = UPDATE_CONTINUE;
 	return ret;
 }

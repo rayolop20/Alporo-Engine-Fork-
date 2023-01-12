@@ -41,4 +41,7 @@ public:
 	CameraComponent* mainGameCamera;
 private:
 
+	int cameraFOV = 60;
+	float farDistance = 500.0f;
+	float nearDistance = 0.1f;
 };
