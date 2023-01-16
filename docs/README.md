@@ -129,6 +129,8 @@ there you can moddify them the way you want.
 - In Game:
 	- You can Drag and drop the Background (Activate on inspector)
 	- You Press Play and Fade out The Background
+	
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/79161063/212733612-21d56322-b7cd-4765-acec-c74924497f8f.gif)
 
 	- if F1 is presed, you can see UI options
 	- With  UI options Avaliable you can press on Checkbox and Activate and Desactivate Vsync
