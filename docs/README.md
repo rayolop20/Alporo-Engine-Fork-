@@ -20,6 +20,10 @@ My contribution(In the Sub-System):
 
 ## Pol Maresch Marxuach
 
+![Pol](https://user-images.githubusercontent.com/79161063/212733053-13a7e5bc-07f6-49ad-890c-4e590d49e71c.PNG)
+
+I am a video game programmer and designer studying at the CITM, UPC. I've been a fan of videogames all my life and now I have to create them.
+
 My contribution(In the Sub-System):
 
 - Created UI Canva, UI Button, UI Background
