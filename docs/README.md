@@ -16,7 +16,7 @@ My contribution(In the Sub-System):
 - Modified buffers.
 - Created CheckBox and UI Structure.
 
-![Pol]
+## Pol Maresch Marxuach
 
 My contribution(In the Sub-System):
 
