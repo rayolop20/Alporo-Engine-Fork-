@@ -133,8 +133,11 @@ there you can moddify them the way you want.
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/79161063/212733612-21d56322-b7cd-4765-acec-c74924497f8f.gif)
 
 	- if F1 is presed, you can see UI options
+![F1](https://user-images.githubusercontent.com/79161063/212734264-205ea946-cfd1-493e-aff8-38324e8e88be.gif)
+
 	- With  UI options Avaliable you can press on Checkbox and Activate and Desactivate Vsync
-	
+![Vsinc](https://user-images.githubusercontent.com/79161063/212734302-ab054b22-275c-4c4b-bf1d-a4fb90e94ada.gif)
+
 - In game Keys
   * 'F1': Activate UI Opcions
   * Mouse: Interact With Game Scene
