@@ -18,11 +18,17 @@ My contribution(In the Sub-System):
 
 ## Pol Maresch Marxuach
 
+![Pol](https://user-images.githubusercontent.com/79161063/212720143-b176aa81-e3f0-43c2-abe9-a2fe23e2f5b3.PNG)
+
 My contribution(In the Sub-System):
 
 - Created UI Canva, UI Button, UI Background
 - Maked The Ui Design In Game
 - Created UI System
+
+
+![Fade Out](https://user-images.githubusercontent.com/79161063/212720277-e1ee1588-5dba-4561-9595-533187d9b950.gif)
+
 
 ## UI Sub-System
 
