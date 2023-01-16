@@ -20,6 +20,8 @@ My contribution(In the Sub-System):
 
 ![Pol](https://user-images.githubusercontent.com/79161063/212720143-b176aa81-e3f0-43c2-abe9-a2fe23e2f5b3.PNG)
 
+I am a video game programmer and designer studying at the CITM, UPC. I've been a lifelong fan of video games and now it's time for me to create them.
+
 My contribution(In the Sub-System):
 
 - Created UI Canva, UI Button, UI Background
