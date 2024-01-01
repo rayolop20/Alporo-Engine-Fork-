@@ -1,5 +1,5 @@
 # AlporoEngine Fork -The Seed Engine- 
-AlporoEngine Fork -The Seed Engine-  is A finished Videogame Engine, Created by Alex Garcia Selma and Pol Maresch Marsuach, this engine is created for a UPC CITM university suject VideoGame Engine. Curse 2022-2023.
+AlporoEngine Fork -The Seed Engine-  is A finished Videogame Engine, Created by Alex Garcia Selma and Pol Maresch Marxuach, this engine is created for a UPC CITM university suject VideoGame Engine. Curse 2022-2023.
 
 ***
 
