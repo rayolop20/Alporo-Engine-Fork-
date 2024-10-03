@@ -1,5 +1,5 @@
 # AlporoEngine Fork -The Seed Engine- 
-AlporoEngine Fork -The Seed Engine-  is A finished Videogame Engine, Created by Alex Garcia Selma and Pol Maresch Marxuach, this engine is created for a UPC CITM university suject VideoGame Engine. Curse 2022-2023.
+AlporoEngine is A finished Videogame Engine, Created by Alex Garcia Selma and Pol Maresch Marxuach, this engine is created for a UPC CITM university suject VideoGame Engine. Curse 2022-2023.
 
 ***
 
@@ -129,14 +129,17 @@ there you can moddify them the way you want.
 - In Game:
 	- You can Drag and drop the Background (Activate on inspector)
 	- You Press Play and Fade out The Background
--Fade Out
+### Fade Out
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/79161063/212733612-21d56322-b7cd-4765-acec-c74924497f8f.gif)
 
--F1:
-	- if F1 is presed, you can see UI options
+### F1:
+- If F1 is presed, you can see UI options
+  
 ![F1](https://user-images.githubusercontent.com/79161063/212734264-205ea946-cfd1-493e-aff8-38324e8e88be.gif)
--Vsync:
-	- With  UI options Avaliable you can press on Checkbox and Activate and Desactivate Vsync
+
+### Vsync:
+- With  UI options Avaliable you can press on Checkbox and Activate and Desactivate Vsync
+  
 ![Vsinc](https://user-images.githubusercontent.com/79161063/212734302-ab054b22-275c-4c4b-bf1d-a4fb90e94ada.gif)
 
 - In game Keys
@@ -146,17 +149,18 @@ there you can moddify them the way you want.
 ***
 ## Link to the last version of the game engine
 
-Github adress: https://github.com/rayolop20/Alporo-Engine-Fork-/releases/tag/v.3
+Github adress: [Last Release](https://github.com/rayolop20/Alporo-Engine-Fork-/releases/tag/v.3)
 
 ## Video Example
 
 [Video Link](https://youtu.be/tslw53VUlfQ)
 
 ## Creators 
+### Github
 
--Pol Maresch: https://github.com/rayolop20.
+[Pol Maresch](https://github.com/rayolop20)
 
--Alex Garcia: https://github.com/MaralGS.
+[Alex Garcia](https://github.com/MaralGS)
 
 ## Fork Creators
 
